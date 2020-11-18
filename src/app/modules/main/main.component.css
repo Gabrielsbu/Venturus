@@ -1,0 +1,100 @@
+.content-main {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 70px;
+
+  margin: 50px 0;
+}
+
+.content-main .card-teams {
+  width: 48%;
+}
+
+.content-main .card-teams .content-header-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.content-main .card-teams .content-header-card button {
+  background: linear-gradient(
+    45deg,
+    rgba(192, 15, 79, 1) 0%,
+    rgba(140, 32, 111, 1) 51%
+  );
+  color: #fff;
+  width: 42px;
+  height: 42px;
+  border-radius: 8px;
+  outline: 0;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.content-main .card-teams .content-header-card button:hover {
+  opacity: 0.8;
+}
+
+mat-card-title h2 {
+  font-weight: bold;
+  color: rgba(140, 32, 111, 1);
+  font-size: 25px;
+}
+
+.content-main .content-ranking {
+  display: flex;
+  flex-direction: column;
+  width: 48%;
+}
+.content-main .content-ranking .content-body-card-ranking {
+  display: flex;
+  justify-content: space-around;
+}
+
+.content-main .content-ranking .content-players {
+  width: 100%;
+  height: 320px;
+  margin-top: 30px;
+  background: linear-gradient(
+    45deg,
+    rgba(192, 15, 79, 1) 0%,
+    rgba(140, 32, 111, 1) 51%
+  );
+
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border-radius: 13px;
+}
+
+.content-main .content-ranking .content-players .less-picked {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.content-main .content-ranking .content-players .most-picked {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.content-main .content-ranking .content-players img {
+  height: 105px;
+  width: 105px;
+  border-radius: 50%;
+  margin-top: 15px;
+}
+.content-main .content-ranking .content-players h4 {
+  color: #fff;
+  font-weight: 500;
+  font-size: 23px;
+}
+.content-main .content-ranking .content-players .player {
+  display: flex;
+}
+.content-main .content-ranking .content-players .player p {
+  color: #fff;
+  margin-left: 10px;
+  font-size: 18px;
+}

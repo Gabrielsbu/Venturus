@@ -1,0 +1,56 @@
+.content-header {
+  z-index: 2;
+  position: sticky;
+
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 8px 0 9px 40px;
+
+  background: linear-gradient(
+    90deg,
+    rgba(192, 15, 79, 1) 0%,
+    rgba(140, 32, 111, 1) 51%
+  );
+}
+
+.content-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.content-logo h2 {
+  margin: 0 0 0 20px;
+  font-size: 18px;
+  color: #fff;
+}
+
+.content-logo img {
+  width: 35px;
+  height: 35px;
+}
+
+.content-login {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 40px 9px 0;
+}
+
+.content-login p {
+  color: #fff;
+}
+
+.content-login h4 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 35px;
+  height: 35px;
+  background: #fff;
+  border-radius: 50%;
+  margin-left: 7px;
+}

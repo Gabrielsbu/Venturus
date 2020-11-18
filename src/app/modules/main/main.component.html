@@ -1,1 +1,47 @@
-<p>main works!</p>
+<div class="content-main">
+  <mat-card class="card-teams">
+    <mat-card-header class="content-header-card">
+      <mat-card-title><h2>My Teams</h2></mat-card-title>
+      <button [routerLink]="['/create-team']"><mat-icon>add</mat-icon></button>
+    </mat-card-header>
+
+    <mat-card-content>
+      <app-table-teams></app-table-teams>
+    </mat-card-content>
+
+  </mat-card>
+
+  <div class="content-ranking">
+    <mat-card class="card-ranking">
+      <mat-card-header class="content-header-card">
+        <mat-card-title><h2>Top 5</h2></mat-card-title>
+      </mat-card-header>
+
+      <mat-card-content class="content-body-card-ranking">
+        <app-table-highest></app-table-highest>
+        <app-table-lowest></app-table-lowest>
+      </mat-card-content>
+
+    </mat-card>
+
+    <div class="content-players">
+      <div class="most-picked">
+        <h4>Most picked player</h4>
+          <div class="player">
+            <img src="../../../assets/cr7.jpg" alt="most-player">
+            <p>89%</p>
+          </div>
+      </div>
+
+      <div class="less-picked">
+        <h4>Less picked player</h4>
+        <div class="player">
+          <img src="../../../assets/fred.jpg" alt="less-player">
+          <p>45%</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
