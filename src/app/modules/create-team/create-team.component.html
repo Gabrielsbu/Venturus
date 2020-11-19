@@ -1,1 +1,80 @@
-<p>create-team works!</p>
+<div class="container-create-team">
+  <header>
+    <h2>Create your team</h2>
+
+    <h3>TEAM INFORMATION</h3>
+  </header>
+
+  <main>
+    <form>
+      <div>
+        <mat-form-field>
+          <span><strong>Team Name</strong></span>
+          <mat-label>Team Name</mat-label>
+          <input matInput placeholder="Team Name" formControlName="name" />
+        </mat-form-field>
+
+        <mat-form-field appearance="fill">
+          <span><strong>Description</strong></span>
+          <mat-label>Description</mat-label>
+          <textarea matInput placeholder="Description" formControlName="description"></textarea>
+        </mat-form-field>
+      </div>
+
+      <div>
+        <mat-form-field>
+          <span><strong>Team Website</strong></span>
+          <mat-label>Team Website</mat-label>
+          <input matInput placeholder="Team Website" formControlName="website" />
+        </mat-form-field>
+
+        <mat-radio-group
+
+          aria-labelledby="example-radio-group-label"
+          class="example-radio-group"
+          (ngModel)="favoriteSeason">
+
+          <mat-radio-button *ngFor="let season of seasons" [value]="season">
+            {{season}}
+          </mat-radio-button>
+        </mat-radio-group>
+
+        <mat-form-field appearance="fill">
+          <span><strong>Tags</strong></span>
+          <mat-label>Tags</mat-label>
+          <textarea matInput placeholder="Tags" formControlName="tags"></textarea>
+        </mat-form-field>
+      </div>
+
+    </form>
+
+    <h3>CONFIGURE SQUAD</h3>
+
+    <div class="content-search-players">
+      <mat-form-field>
+        <span><strong>Search Players</strong></span>
+        <mat-label>Search Players</mat-label>
+        <input matInput placeholder="Search Players" >
+      </mat-form-field>
+
+      <mat-card class="card-players">
+        <mat-card-header>
+
+            <mat-card-title><strong>Name: </strong> Cristiano Ronaldo</mat-card-title>
+            <mat-card-title><strong>Nacionality: </strong> Brazil</mat-card-title>
+
+          <div>
+            <p><strong>Age: </strong>32</p>
+          </div>
+        </mat-card-header>
+      </mat-card>
+
+    </div>
+
+
+  </main>
+
+
+
+
+</div>

@@ -7,7 +7,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CreateTeamComponent implements OnInit {
 
-  constructor() { }
+  favoriteSeason: string;
+  seasons: string[] = ['Real', 'Fantasy'];
+
+  constructor() {
+
+  }
 
   ngOnInit(): void {
   }

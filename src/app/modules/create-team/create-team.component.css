@@ -1,0 +1,91 @@
+.container-create-team header {
+  display: flex;
+  flex-direction: column;
+}
+
+.container-create-team header h2 {
+  margin: 50px 50px;
+  font-weight: 700;
+  color: rgba(140, 32, 111, 1);
+  font-size: 25px;
+}
+
+.container-create-team header h3 {
+  text-align: center;
+  color: rgb(146, 146, 146);
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+.container-create-team main form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.container-create-team main form div {
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+  align-items: center;
+}
+.container-create-team main form div mat-form-field input {
+  margin-top: 15px;
+  width: 350px;
+  height: 40px;
+  border-radius: 8px;
+  padding: 15px;
+  border: 1px solid rgb(146, 146, 146);
+  outline: 0;
+}
+.container-create-team main form div mat-form-field textarea {
+  margin-top: 15px;
+  width: 350px;
+  height: 350px;
+  border-radius: 8px;
+  padding: 15px;
+  border: 1px solid rgb(146, 146, 146);
+  outline: 0;
+}
+
+.container-create-team main form div mat-radio-button {
+  margin-right: 25px;
+}
+.container-create-team main form div mat-form-field textarea:focus {
+  border: 1.5px solid rgba(140, 32, 111, 1);
+}
+.container-create-team main form div mat-form-field input:focus {
+  border: 1.5px solid rgba(140, 32, 111, 1);
+}
+
+.container-create-team main h3 {
+  text-align: center;
+  color: rgb(146, 146, 146);
+  font-weight: 700;
+  margin: 30px 0;
+}
+
+.container-create-team main .content-search-players {
+  margin-bottom: 350px;
+}
+.container-create-team main .content-search-players mat-form-field input {
+  width: 450px;
+  height: 35px;
+  border-radius: 8px;
+  padding: 15px;
+  outline: 0;
+  border: 1.5px solid rgb(202, 202, 202);
+  margin-top: 15px;
+}
+
+.container-create-team main mat-card {
+  width: 450px;
+  background: rgb(202, 202, 202);
+}
+.container-create-team
+  main
+  .content-search-players
+  .card-players
+  mat-card-header {
+  display: flex;
+  justify-content: space-between;
+}
